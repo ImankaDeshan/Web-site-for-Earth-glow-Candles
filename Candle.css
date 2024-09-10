@@ -1,0 +1,349 @@
+
+* {
+	margin: 0px;
+	padding: 0px;
+	
+}
+
+@media (min-width:900px){
+	.page1 {
+		font-size: 5px;
+	}
+}
+ .body {
+		
+	font-size: 25px;
+	min-width: 500px;
+	
+ }
+
+ /* whole page 1 design */
+ 
+ .page1 {
+	 
+	background-image:url(Images/Page1/1.jpg);
+	background-repeat:no-repeat;
+	background-size:cover;
+	background-position:center;
+	background-attachment:fixed;
+	width:100%;
+	height: 100%;
+	z-index:-2;
+	
+}
+
+/* login button */
+
+.login {
+	position: absolute;
+	right:0%;
+	font-family:Poppins;
+	 padding:7px 20px 7px 20px;
+	 border:none;
+	 border-radius:20px;
+	 background-color:32675F;
+	 font-size:16;
+	 color:white;
+	 margin: 7px 30px 0px 0px;
+}
+
+/* styles of Header */
+
+ .header {
+	width: 100% ;
+	height: 50px;
+	background-color:F7EFE5;
+	box-shadow:0px 0px 10px 10px rgb(0, 0 , 0, 0.1);
+	display: flex;
+	align-items:center;
+	justify-content: center;
+	z-index: 1;
+ }
+
+ /* header menu bar */
+
+ .menubar {
+	list-style: none;
+	display: inline-flex;
+	font-family:Poppins;
+	justify-content: space-between;
+ }
+
+ .menubar li {
+	
+	padding-left: 30px;
+	padding-right: 30px;
+ }
+
+ .menubar li a {
+	text-decoration: none;
+	color: black;
+	font-size: 15px;
+	font-weight: 600;
+	transition: all 0.3s; /* color transition time */
+ }
+
+ /* menu bar hover = change color to green */
+
+ .menubar li :hover {
+	color:32675F;
+	
+ }
+
+ /* Products Details drop down Page Design */
+
+ .products {
+	display: none;
+	position: absolute;
+	background-color: rgb(217,217,217,0.5 );
+	border-radius: 0px 0px 30px 30px ;
+	width: 340px;
+	height: 350px;
+	z-index: 1;
+ }
+
+ .topic {
+	background-color: 88B5A1;
+	border-radius: 5px;
+	box-shadow: 0px 5px 10px 2px rgb(0, 0 , 0, 0.1);
+	padding: 5px;
+	margin:5px;
+	position: relative;
+ }
+ 
+ .products p {
+	font-size: 15px; /* text in name of products */
+ }
+
+ .block1 {
+	
+	/* the part for each product */
+
+	background-color: rgb(50, 103, 95, 0.1);
+	border: 1px solid black;
+	border-radius: 10px;
+	box-shadow: 0px 5px 5px 2px rgb(0, 0 , 0, 0.1);
+	width:300px;
+	height: 50px;
+	display:flex;
+	align-items: center;
+	justify-content: left;
+
+	margin: 20px;
+ }
+
+ .p1 {
+	Width : 30px;
+	height: 30px;
+	background-color:greenyellow;
+	margin: 10px;
+	border-radius: 10px;
+	transition: all 0.3s;
+ }
+
+ .menubar li:hover .products {
+	display: block;
+ }
+ 
+ .products .block1 img:hover {
+	transform: scale(4);
+ }
+
+ /* main intro of web page */
+
+ .intro {
+	 
+	font-family:Poppins;
+	font-weight:600;
+	font-size:40px;
+	position:absolute;
+	   left:100px;
+	   top:170px;
+    z-index:0;
+}
+
+/* button of shop online */
+
+ .shopbtn {
+	 font-family:Poppins;
+	 padding:7px 20px 7px 20px;
+	 border:none;
+	 border-radius:20px;
+	 background-color:32675F;
+	 font-size:22;
+	 color:white;
+	 
+	 /*position*/ 
+	 
+	 position:absolute;
+		left:100px;
+		top:475px;
+	 
+ }
+
+ /* discription of payment methods with pic */
+ 
+ .Paymentmethods {
+	 font-family:Open Sans;
+	 font-size:15px;
+	 position:absolute;
+		left:100px;
+		top:540px;
+ }
+ 
+ .pay {
+	 position:absolute;
+		top:570px;
+		left:100px;
+ }
+
+ /* whole page 2 styles */
+
+ .page2 {
+	width: 100%;
+	height: 100%;
+	/*background-image: url(Images/Page2/Background.jpg);*/
+	background-attachment:fixed;
+	background-size: cover;
+	position: relative;
+	display: flex;
+ }
+
+ /* header */ 
+ .header2 {
+	width: 100%;
+	height:50px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+
+ }
+ /* heading */
+ .heading {
+	font-family: poppins;
+	font-weight: 500;
+ }
+ 
+ .product2 {
+	font-family: poppins;
+	width: 100%;
+	display: flex;
+	background-color:transparent;
+	justify-content: center;
+	align-items: center;
+	flex-wrap: wrap;
+	/*gap:60px;*/
+	padding: 60px;
+	
+ }
+
+ /* scented Candle part */ 
+ .Scen {
+	height: 550px;
+	width: 280px;
+	background-color:D9D9D9;
+	border-radius: 30px;
+	box-shadow: 1px 2px 5px 5px rgba(152, 151, 151, 0.1);
+	/* position: absolute;
+		top:80px;
+		left: 50px; */
+	
+	justify-content: center;
+	overflow: hidden;
+	margin: 30px;
+ }
+
+ .pic {
+	width: 220px;
+	height: 220	px;
+	margin: 30px 3px 0px 30px ;
+	border-radius: 20px;
+	box-shadow: 3px 5px 5px 5px rgb(0, 0 , 0, 0.1);
+	
+ }
+
+ .txt1 {
+	height: 300px;
+	width: 280px;
+	display: flex;
+	background-color: transparent;
+	flex-direction: column;
+	justify-content: flex-start;
+	align-items: center;
+	text-align: center;
+	position: relative;
+		top:0px;
+ }
+
+.txt1 h6 {
+	padding: 10px 0px 0px 0px;
+	font-size: 20px ;
+	font-weight: 450;
+	margin: 20px 0px 10px 0px;
+	
+ }
+
+.txt1 p {
+	font-size: 15;
+ }
+
+.txt1 input {
+	font-size: 17px;
+	border: none;
+	background-color: transparent;
+	text-align: center;
+
+	position: absolute;
+		bottom: 5px;
+ }
+
+.txt1 input:hover {
+	color:32675F;
+	cursor: pointer;
+
+ }
+
+ .Soy {
+	height: 550px;
+	width: 280px;
+	background-color:D9D9D9;
+	border-radius: 30px;
+	box-shadow: 1px 2px 5px 5px rgba(152, 151, 151, 0.1);
+	/* position: absolute;
+		top:80px;
+		left: 380px; */
+
+	justify-content: center;
+	overflow: hidden;
+	margin: 30px;
+ }
+
+ .pillar {
+	height: 550px;
+	width: 280px;
+	background-color:D9D9D9;
+	border-radius: 30px;
+	box-shadow: 1px 2px 5px 5px rgba(152, 151, 151, 0.1);
+	/* position: absolute;
+		top:80px;
+		left: 710px; */
+
+	justify-content: center;
+	overflow: hidden;
+	margin: 30px;
+ }
+
+ .tea {
+	height: 550px;
+	width: 280px;
+	background-color:D9D9D9;
+	border-radius: 30px;
+	box-shadow: 1px 2px 5px 5px rgba(152, 151, 151, 0.1);
+	/* position: absolute;
+		top:80px;
+		left: 1040px; */
+
+	justify-content: center;
+	overflow: hidden;
+	margin: 30px;
+ }
