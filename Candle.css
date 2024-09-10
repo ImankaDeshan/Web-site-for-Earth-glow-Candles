@@ -193,7 +193,7 @@
 .btn:hover {
 	cursor: pointer;
 	scale: 1.02;
-	transition: all 0.3s;
+	transition: all 0.2s;
  }
 
  /* discription of payment methods with pic */
