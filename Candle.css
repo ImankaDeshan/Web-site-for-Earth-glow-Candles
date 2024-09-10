@@ -5,11 +5,14 @@
 	
 }
 
-@media (min-width:900px){
-	.page1 {
-		font-size: 5px;
+@media screen and (max-width:786px) {
+	.page1 .intro {
+		font-size: 30px;
+		margin-top: 20%;
 	}
+
 }
+
  .body {
 		
 	font-size: 25px;
@@ -156,9 +159,11 @@
 	font-family:Poppins;
 	font-weight:600;
 	font-size:40px;
-	position:absolute;
+	/*position:absolute;
 	   left:100px;
-	   top:170px;
+	   top:170px; */
+	   margin-top: 10%;
+	   margin-left: 6%;
     z-index:0;
 }
 
@@ -173,11 +178,14 @@
 	 font-size:22;
 	 color:white;
 	 
-	 /*position*/ 
+	 /*position
 	 
 	 position:absolute;
 		left:100px;
-		top:475px;
+		top:475px; */
+
+	margin-left: 6%;
+	margin-top: 20px;
 	 
  }
 
@@ -186,15 +194,21 @@
  .Paymentmethods {
 	 font-family:Open Sans;
 	 font-size:15px;
-	 position:absolute;
+	 /* position:absolute;
 		left:100px;
-		top:540px;
+		top:540px; */
+
+	margin-left: 7%;
+	margin-top: 20px;
  }
  
  .pay {
-	 position:absolute;
+	/* position:absolute;
 		top:570px;
-		left:100px;
+		left:100px; */
+
+	margin-left: 6%;
+	margin-top: 10px;
  }
 
  /* whole page 2 styles */
