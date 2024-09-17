@@ -3,6 +3,7 @@
 	margin: 0px;
 	padding: 0px;
 	
+	
 }
 
 @media screen and (max-width:786px) {
@@ -40,7 +41,7 @@
 .login {
 	position: absolute;
 	right:0%;
-	font-family:Poppins;
+	font-family: 'Poppins', sans-serif;
 	 padding:7px 20px 7px 20px;
 	 border:none;
 	 border-radius:20px;
@@ -68,7 +69,7 @@
  .menubar {
 	list-style: none;
 	display: inline-flex;
-	font-family:Poppins;
+	font-family: 'Poppins', sans-serif;
 	justify-content: space-between;
  }
 
@@ -156,7 +157,7 @@
 
  .intro {
 	 
-	font-family:Poppins;
+	font-family: 'Poppins', sans-serif;
 	font-weight:600;
 	font-size:40px;
 	/*position:absolute;
@@ -170,7 +171,7 @@
 /* button of shop online */
 
  .shopbtn {
-	 font-family:Poppins;
+	 font-family: 'Poppins', sans-serif;
 	 padding:7px 20px 7px 20px;
 	 border:none;
 	 border-radius:20px;
@@ -199,7 +200,7 @@
  /* discription of payment methods with pic */
  
  .Paymentmethods {
-	 font-family:Open Sans;
+	font-family: 'Open Sans', sans-serif;
 	 font-size:15px;
 	 /* position:absolute;
 		left:100px;
@@ -241,12 +242,12 @@
  }
  /* heading */
  .heading {
-	font-family: poppins;
+	font-family: 'Poppins', sans-serif;
 	font-weight: 500;
  }
  
  .product2 {
-	font-family: poppins;
+	font-family: 'Poppins', sans-serif;
 	width: 100%;
 	display: flex;
 	background-color:transparent;
