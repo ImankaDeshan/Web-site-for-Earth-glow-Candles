@@ -84,13 +84,15 @@ body{
 	margin: 25px;
 	gap:30px;
 	flex-wrap: wrap;
+	justify-content:center;
 }
 
 .card {
 	flex-basis:220px;
 	padding: 3px;
 	border-radius: 8px;
-	border: 1px solid black;
+	border: 1px solid rgba(0, 0, 0, 0.2);
+	overflow: hidden;
 }
 
 .card img {
@@ -99,4 +101,29 @@ body{
 	padding: 10px;
 	border-radius: 20px;
 	object-fit: cover;
+}
+
+.prodlist .text {
+	margin: 5px;
+	margin-top: 0px;
+	width: 100%;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	flex-direction: column;
+}
+
+.prodlist .text h6 {
+	font-size: 15px;
+}
+
+.prodlist button {
+	border: none;
+	background-color: #32675F;
+	padding:5px;
+	width: 200px;
+	border-radius: 0px 0px 10px 10px ;
+	margin:10px;
+	color:white;
+
 }
