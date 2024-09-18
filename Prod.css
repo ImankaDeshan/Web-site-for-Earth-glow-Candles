@@ -4,6 +4,14 @@
 	
 }
 
+body{
+	width:100%;
+	height: 100%;
+	z-index:-2;
+}
+.head {
+	width: 100%;
+}
 .header {
 	font-family: 'Poppins', sans-serif;
 	height: auto;
@@ -46,12 +54,11 @@
 /* Product Names buttons*/ 
 
 .prodnames {
-	width: 100%;
+	/* width: 100%; */
 	background-color: white;
 	height: auto;
 	box-shadow: 0 4px 4px rgba(0, 0, 0, 0.2);
 	padding: 10px;
-	z-index: 1;
 	display: flex;
 	gap:1%;
 }
@@ -72,51 +79,24 @@
 	background-color: rgb(0, 0, 0,0.1);
 }
 
-/* Products List*/ 
-
 .prodlist {
-	padding: 20px;
 	display: flex;
+	margin: 25px;
+	gap:30px;
+	flex-wrap: wrap;
 }
-.card {
-	width: auto;
-	height: auto;
-	border: 1px solid rgb(0, 0, 0,0.3);
-	border-radius: 10px;
 
-	margin: 10px;
+.card {
+	flex-basis:220px;
+	padding: 3px;
+	border-radius: 8px;
+	border: 1px solid black;
 }
 
 .card img {
-	width: 200px;
-	height: 200px;
-	padding: 10px 10px 3px 10px;
-}
-.prodlist .text {
-	width: 100%;
-	height: auto;
-	display: flex;
-	flex-direction: column;
-	align-items: center;
-	justify-content: center;
-	margin-top: 0px;
-}
-
-.prodlist .text h6 {
-	font-size: 15px;
-}
-
-.prodlist .functions {
-	display: flex;
-	flex-direction: column;
-}
-
-.prodlist .card button {
-	border: none;
-	border-radius: 5px;
-	background-color:#32675F;;
-	color: white;
-	padding: 7px;
-	margin: 10px;
-
+	width:200px;
+	height:200px;
+	padding: 10px;
+	border-radius: 20px;
+	object-fit: cover;
 }

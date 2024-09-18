@@ -258,12 +258,7 @@
  .product2 {
 	font-family: 'Poppins', sans-serif;
 	width: 100%;
-	/*display: flex;
-	background-color:transparent;
-	justify-content: center;
-	align-items: center;*/
 	flex-wrap: wrap;
-	/*gap:60px;*/
 	padding: 100px;
 	display: flex;
 	justify-content: space-between;
