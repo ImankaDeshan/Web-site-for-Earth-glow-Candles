@@ -9,21 +9,25 @@
 </head>
 <body>
 
-    <div class="page">
+    <div class="page1">
 
+ <!-- head Section  -->
         <div class="head">
+
+<!-- header section  -->
             <div class ="header"> 
             <a class ="Backhome"href="Candles Online Shop.html">  <img  src="Images/Prod/Backhome.png" > </a>
             <h2> Our Products </h2>
-                <a href="#" class="cart-icon"> <svg fill="none" viewBox="0 0 24 24">
+
+<!-- cart icon and span -->
+                <a href="#" id ="icon-cart" class="cart-icon"> <svg fill="none" viewBox="0 0 24 24">
                     <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 4h1.5L9 16m0 0h8m-8 0a2 2 0 1 0 0 4 2 2 0 0 0 0-4Zm8 0a2 2 0 1 0 0 4 2 2 0 0 0 0-4Zm-8.5-3h9.25L19 7h-1M8 7h-.688M13 5v4m-2-2h4"/>
                   </svg>
                   <span class="cart-count"> 8 </span>
                   </a>
-                 
+             </div>
 
-            
-            </div>
+<!-- Product list  -->
             <div class="prodnames" id="filter-buttons">
                 <button class="active" data-filter ="all">All Products</button>
                 <button data-filter="scen"> Scented Candles</button>
@@ -33,6 +37,20 @@
         </div>
            
         </div>
+<!-- cart design  -->
+        <div id ="cart" class="cart-design">
+            <h1> Shopping cart</h1>
+            <div class="cart-list">
+
+
+            </div>
+            <div class="btn"> 
+                <button class="pay"> Pay Now </button>
+                <button id ="close-cart" class="close"> close</button>
+            </div>
+        </div>
+
+<!-- product list -->
         
         <div class="prodlist" id="filterable-cards">
             <div class="card" data-name="scen">

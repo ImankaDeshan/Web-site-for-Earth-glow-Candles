@@ -9,6 +9,7 @@ body{
 	height: 100%;
 	z-index:-2;
 }
+		 					/* header Section */
 .head {
 	width: 100%;
 }
@@ -38,6 +39,7 @@ body{
 		left: 0px;
 		top:0px;
 }
+								/* cart Icon and span */
 
 .cart-icon {
 	position: absolute;
@@ -67,8 +69,59 @@ body{
 	
 }
 
+								/* cart Design */
 
-/* Product Names buttons*/ 
+.cart-design {
+	position: fixed;
+    right: -300px; /* Hide cart offscreen to the right */
+    top: 0;
+    width: 300px;
+    height: 100%;
+    background-color:rgb(0, 0, 0,0.7);
+    transition: right 0.3s ease-in-out;
+    box-shadow: -2px 0px 5px rgba(0,0,0,0.2);
+	font-family: 'Poppins', sans-serif;
+	display: grid;
+	grid-template-rows: 50px auto 55px;
+}
+
+.cart-design h1 {
+	color: white;
+	font-size: 20px;
+	font-weight: 500;
+	width: 100%;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	background-color: black;
+	border-radius: 0px 0px 10px 10px ;
+	
+}
+
+.cart-design.active {
+	right:0;
+}
+
+.cart-design .btn{
+	display: flex;
+	justify-content: space-between;
+	gap: 5px;
+	justify-content: center;
+	margin:5px;
+}
+
+.btn button {
+	width:50%;
+	height: 50px;
+	border-radius: 20px;
+	font-size: 12px;
+	
+}
+.btn .pay {
+	background-color: #32675F;
+	color: white;
+}
+								/* Product Names buttons*/ 
 
 .prodnames {
 	/* width: 100%; */

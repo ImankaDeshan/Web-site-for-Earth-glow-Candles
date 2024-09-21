@@ -13,3 +13,15 @@ const filterCards = (e) => {
     });
 }
 filterButtons.forEach(button => button.addEventListener("click", filterCards));
+
+
+// Cart Fonction Java Scripts 
+
+document.getElementById('icon-cart').addEventListener('click', function() {
+    document.getElementById('cart').classList.add('active');
+});
+
+// Function to close the cart
+document.getElementById('close-cart').addEventListener('click', function() {
+    document.getElementById('cart').classList.remove('active');
+});
