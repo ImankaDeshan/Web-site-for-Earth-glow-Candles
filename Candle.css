@@ -22,6 +22,14 @@
 	}
 	
 }
+@media screen and (max-width:900px) {
+	.log {
+		width:50px;
+	}
+	.log h5 {
+		display: none;
+	}
+}
 
  .body {
 		
@@ -43,6 +51,34 @@
 	height: 100%;
 	z-index:-2;
 	
+}
+
+/* logo Css */
+
+.log {
+	
+	height: 50px;
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+	justify-content: flex-start;
+	position: absolute;
+		top:0px;
+	margin: 5px;
+	
+
+	
+}
+
+.log h5 {
+	font-family: "Quicksand", sans-serif;
+	font-size: 15px;
+	color:rgb(0, 0 , 0, 0.5)
+}
+
+.log img {
+	width: 50px;
+	height: 50px;
 }
 
 /* login button */
@@ -102,6 +138,57 @@
 	color:32675F;
 	
  }
+
+ /* responsive munu bar designs  */
+
+ .rmenuico {
+	position: absolute;
+		top: 0px;
+		right: 0px;
+	z-index: 5;
+ }
+
+ .rmenuico img {
+	width: 25px;
+	height: 25px;
+	opacity: 0.7;
+	padding: 10px;
+ }
+
+
+ .rmenu1 {
+	background-color: rgb(0, 0 , 0, 0.1);
+	padding: 10px;
+	list-style: none;
+	position: absolute;
+		right:0px;
+
+	
+	
+	
+
+	
+ }
+
+ .rmenu li {
+	padding: 10px;
+	display: none;
+ }
+
+ .rmenu li a {
+	text-decoration: none;
+	font-family: 'Poppins', sans-serif;
+ }
+
+ .rmenuico img:hover {
+	cursor: pointer;
+	
+}
+
+.rmenuico img:hover .rmenu1 li {
+	display:block;
+}
+
 
  /* Products Details drop down Page Design */
 
@@ -175,6 +262,8 @@
 	   margin-top: 10%;
 	   margin-left: 6%;
     z-index:0;
+	display: flex;
+	flex-wrap: wrap;
 }
 
 /* button of shop online */

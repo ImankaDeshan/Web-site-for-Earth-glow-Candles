@@ -39,16 +39,32 @@ body{
 		top:0px;
 }
 
-.cart {
+.cart-icon {
 	position: absolute;
 	right: 0px;
 	margin: 10px;
 	margin-right: 30px;
 }
 
-.cart img {
+.cart-icon svg {
 	width: 30px;
 	height: 30px;
+	color: black;
+}
+
+.cart-icon span {
+	display: flex;
+	width: 20px;
+	height: 20px;
+	background-color: red;
+	justify-content: center;
+	align-items: center;
+	color: white;
+	border-radius: 50%;
+	position: absolute;
+		top: 50%;
+		left: 100%;
+	
 }
 
 
