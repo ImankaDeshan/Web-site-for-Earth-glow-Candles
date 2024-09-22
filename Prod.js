@@ -17,6 +17,8 @@ filterButtons.forEach(button => button.addEventListener("click", filterCards));
 
 // Cart Fonction Java Scripts 
 
+
+//function to open the cart
 document.getElementById('icon-cart').addEventListener('click', function() {
     document.getElementById('cart').classList.add('active');
 });
@@ -24,4 +26,16 @@ document.getElementById('icon-cart').addEventListener('click', function() {
 // Function to close the cart
 document.getElementById('close-cart').addEventListener('click', function() {
     document.getElementById('cart').classList.remove('active');
+});
+
+//function to update the cart 
+
+const addToCart = document.getElementById('add');
+const cartList = document.getElementById('Cart-li');
+
+const li = document.createElement('li'); 
+
+
+addToCart.addEventListener('click' , function() {
+
 });

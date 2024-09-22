@@ -9,6 +9,10 @@ body{
 	height: 100%;
 	z-index:-2;
 }
+
+button {
+	cursor: pointer;
+}
 		 					/* header Section */
 .head {
 	width: 100%;
@@ -117,10 +121,18 @@ body{
 	font-size: 12px;
 	
 }
+
+.btn button:hover {
+	scale: 1.01;
+}
 .btn .pay {
 	background-color: #32675F;
 	color: white;
 }
+
+/* cart list styles */
+
+
 								/* Product Names buttons*/ 
 
 .prodnames {
@@ -149,6 +161,8 @@ body{
 .prodnames button:hover {
 	background-color: rgb(0, 0, 0,0.1);
 }
+
+					/* product List  */
 
 .prodlist {
 	display: flex;
@@ -198,6 +212,11 @@ body{
 	color:white;
 
 }
+
+.prodlist button:hover{
+	scale:1.01;
+}
+
 #filterable-cards .card.hide {
 	display: none;
   }
