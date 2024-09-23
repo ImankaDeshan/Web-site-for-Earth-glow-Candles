@@ -87,3 +87,6 @@ body , html {
     opacity: 1;
 }
 
+.logininterface .loginbtn:hover{
+    cursor: pointer;
+}
