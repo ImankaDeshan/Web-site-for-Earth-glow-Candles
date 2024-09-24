@@ -27,6 +27,7 @@ body , html {
     height: auto;
     width: auto;
     border-radius: 50px;
+   
     
 }
 
@@ -84,6 +85,79 @@ body , html {
     width: 100px;
     background-color: #32675F;
     color: white;
-    opacity: 1;
 }
 
+.logininterface .loginbtn:hover {
+    scale:1.04;
+}
+
+/* Signup page styles */
+
+
+.signup {
+    position: absolute;
+    background-color: rgb(0, 0, 0, 0.5);
+    height: auto;
+    width: auto;
+    border-radius: 50px;
+    display: none;
+}
+
+.signininterface {
+    margin: 30px 30px 30px 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.signininterface h5 {
+    color: white;
+    font-size: 40px;
+    font-weight: 600;
+    margin: 0px;
+}
+
+.signininterface h4 {
+    color: white;
+    font-size: 20px;
+    font-weight: 400;
+    margin: 1%;
+    margin-bottom: 5%;
+}
+
+.signininterface input {
+    width:500px;
+    height: 40px;
+    font-size: 20px;
+    text-align: center;
+    border: none;
+    border-radius: 10px;
+    margin: 10px;
+    background-color: rgb(0, 0, 0, 0.2);
+    color: #ffffff;
+}
+
+.signininterface input:focus {
+    border-color: #FF5733; 
+    outline: none; 
+    color: #ffffff;
+}
+
+.signininterface p {
+    color: white;
+}
+
+.signininterface a{
+    color: greenyellow ;
+}
+
+.signininterface .signinbtn {
+    width: 100px;
+    background-color: #32675F;
+    color: white;
+}
+
+.signininterface .signinbtn:hover {
+    scale:1.03;
+}

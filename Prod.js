@@ -30,12 +30,61 @@ document.getElementById('close-cart').addEventListener('click', function() {
 
 //function to update the cart 
 
-const addToCart = document.getElementById('add');
-const cartList = document.getElementById('Cart-li');
 
-const li = document.createElement('li'); 
+// function for adding items to the cart
+
+const cart = document.getElementById('cart');
+const cartList = document.getElementById('cart-li');
+let cartItems = [];
+
+const addToCart = (product) => {
+    const { name, price, image } = product.dataset;
 
 
-addToCart.addEventListener('click' , function() {
+ // Check if item already exists in cart
+ const existingItem = cartItems.find(item => item.name === name);
+ if (existingItem) {
+     existingItem.quantity += 1;
+ } else {
+     cartItems.push({
+         name: name,
+         price: parseFloat(price),
+         image: image,
+         quantity: 1
+     });
+ }
 
-});
+ updateCart();
+};
+
+// Update the cart display
+const updateCart = () => {
+    cartList.innerHTML = ""; // Clear previous cart items
+
+    cartItems.forEach(item => {
+        const li = document.createElement('li');
+        li.innerHTML = `
+            <div class="cart-item">
+                <div class="item">
+                    <img src="${item.image}" alt="${item.name}" class="cart-item-img">
+                    <div class="cart-item-info">
+                        <h6>${item.name}</h6>
+                        <p>Price: Rs ${item.price}</p>
+                        <p>Quantity: ${item.quantity}</p>
+                    </div>
+                    <input type="button" value ="Delete"> 
+                </div>
+            </div>
+        `;
+        cartList.appendChild(li);
+    });
+
+        // Update cart count
+        document.querySelector('.cart-count').textContent = cartItems.reduce((total, item) => total + item.quantity, 0);
+    };
+
+    // Add event listeners to 'Add to Cart' buttons
+const addToCartButtons = document.querySelectorAll('.add-to-cart');
+addToCartButtons.forEach(button => button.addEventListener('click', function () {
+    addToCart(this.closest('.card')); // Pass the card element to addToCart function
+}));
