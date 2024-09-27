@@ -87,6 +87,7 @@ body , html {
     color: white;
 }
 
+
 .logininterface .loginbtn:hover {
     scale:1.04;
 }
@@ -160,4 +161,9 @@ body , html {
 
 .signininterface .signinbtn:hover {
     scale:1.03;
+}
+
+.logininterface .loginbtn:hover{
+    cursor: pointer;
+
 }
