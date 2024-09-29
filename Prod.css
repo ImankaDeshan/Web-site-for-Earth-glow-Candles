@@ -125,12 +125,15 @@ button {
 	
 }
 
+
+
 .btn button:hover {
 	scale: 1.01;
 }
 .btn .pay {
 	background-color: #32675F;
 	color: white;
+	
 }
 
 .cart-item {

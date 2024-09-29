@@ -88,3 +88,10 @@ const addToCartButtons = document.querySelectorAll('.add-to-cart');
 addToCartButtons.forEach(button => button.addEventListener('click', function () {
     addToCart(this.closest('.card')); // Pass the card element to addToCart function
 }));
+
+
+// open place holder page 
+
+function openplaceorder() {
+    window.location.href = 'placeorder.html';
+}
